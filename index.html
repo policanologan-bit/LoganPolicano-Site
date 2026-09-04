@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logan Policano — Finance</title>
+<meta name="description" content="Logan Policano — Finance student at the University of Delaware. Experience in finance & accounting, AI-driven market analysis, and financial modeling.">
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --text: #E8E8E8;
+    --dim: #9A9A9A;
+    --faint: #6E6E6E;
+    --border: #232323;
+    --pill-bg: #161616;
+    --pill-border: #2A2A2A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--dim);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 40px;
+  }
+
+  a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--faint); }
+  a:hover { text-decoration-color: var(--text); }
+  a:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  h1 {
+    color: #FFFFFF;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .subtitle { margin-top: 2px; }
+
+  h2 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 48px;
+    margin-bottom: 18px;
+  }
+
+  /* Experience */
+  .job { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+  .job:last-of-type { border-bottom: none; margin-bottom: 0; }
+
+  .org { color: #FFFFFF; font-weight: 600; margin-bottom: 2px; }
+
+  .role-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .role-line .dates { color: var(--faint); font-size: 0.8rem; white-space: nowrap; }
+
+  .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags span {
+    font-size: 0.75rem;
+    color: var(--dim);
+    background: var(--pill-bg);
+    border: 1px solid var(--pill-border);
+    border-radius: 6px;
+    padding: 2px 9px;
+  }
+
+  /* Projects */
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+  }
+  .card.wide { grid-column: 1 / -1; }
+  .card h3 { font-size: 0.9rem; font-weight: 600; color: #FFFFFF; }
+  .card h3 a { color: #FFFFFF; text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .card p { margin-top: 4px; font-size: 0.85rem; }
+
+  /* Certifications */
+  .certs { list-style: none; }
+  .certs li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .certs li:last-child { border-bottom: none; }
+  .certs .cert-name { color: var(--text); }
+  .certs .year { color: var(--faint); font-size: 0.8rem; }
+
+  /* Contact */
+  .contact { list-style: none; }
+  .contact li { margin-bottom: 6px; }
+  .contact .label { color: #FFFFFF; font-weight: 600; }
+
+  footer {
+    margin-top: 64px;
+    text-align: right;
+    color: var(--faint);
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 520px) {
+    .projects { grid-template-columns: 1fr; }
+    .role-line { flex-wrap: wrap; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Logan Policano</h1>
+    <p class="subtitle">Finance · University of Delaware '27</p>
+  </header>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <p class="org">One Energy Inc.</p>
+      <div class="role-line">
+        <span>Finance &amp; Accounting Intern</span>
+        <span class="dates">May 2026 → Aug 2026</span>
+      </div>
+      <p style="margin-top:6px; font-size:0.85rem;">Performed daily audits and reconciliations of $100,000+ in financial accounts. Built Excel-based financial models to evaluate expenses, validate pricing data, and sharpen forecasting accuracy. Analyzed pricing and margins to generate customer quotes, optimizing profitability across fuel transactions and supplier contracts.</p>
+      <div class="tags"><span>Excel</span><span>Financial Modeling</span><span>Audits &amp; Reconciliation</span><span>Forecasting</span><span>Margin Analysis</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card wide">
+        <h3>Coin Restoration Alliance — AI Agent Suite</h3>
+        <p>Designed and deployed custom AI agents that automate market analysis, due diligence, and risk assessment on Solana projects. The agents screen token fundamentals, liquidity, and team history to score project risk, turning hours of manual research into automated reports that back the community's investment guidance.</p>
+        <div class="tags"><span>AI Agents</span><span>Market Analysis</span><span>Due Diligence</span><span>Risk Assessment</span><span>Solana</span></div>
+      </div>
+      <div class="card">
+        <h3><a href="https://lottery-recon.vercel.app/" target="_blank" rel="noopener">Lottery Recon →</a></h3>
+        <p>Web tool that converts state lottery issuance PDFs into ready-to-paste Excel tracking rows. Turned a manual reconciliation process that took upwards of an hour into one that takes about 5 minutes.</p>
+        <div class="tags"><span>Automation</span><span>Excel</span><span>PDF Parsing</span><span>Web Tool</span></div>
+      </div>
+      <div class="card">
+        <h3><a href="https://1drv.ms/x/c/7d02a826d462ec28/IQDaB1Ab7R3tRJjhRCMsjUAWAbkpz4T2W-xlVnymxcg2gHk?e=dyVl2T" target="_blank" rel="noopener">Dell / EMC Valuation →</a></h3>
+        <p>Full FCFF valuation of Dell's 2013 $24.8B going-private deal and the $67B EMC acquisition. Built WACC from CAPM, modeled 6-year growth to a 3% terminal rate, solved for the operating improvements behind a 20% investor return, and quantified merger synergies from margin gains and a lower combined WACC.</p>
+        <div class="tags"><span>FCFF</span><span>WACC</span><span>DCF</span><span>Synergy Analysis</span><span>Excel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul class="certs">
+      <li><span class="cert-name">Bloomberg Market Concepts</span><span class="year">2026</span></li>
+      <li><span class="cert-name">Bloomberg Finance Fundamentals</span><span class="year">2026</span></li>
+      <li><span class="cert-name">Bloomberg Spreadsheet Analysis</span><span class="year">2026</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="job">
+      <p class="org">University of Delaware</p>
+      <div class="role-line">
+        <span>BS in Finance — Lerner College of Business and Economics</span>
+        <span class="dates">May 2027</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li><span class="label">Email:</span> <a href="mailto:policanologan@gmail.com">policanologan@gmail.com</a></li>
+      <li><span class="label">Phone:</span> <a href="tel:+19782010176">978-201-0176</a></li>
+      <li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/logan-policano" target="_blank" rel="noopener">logan-policano</a></li>
+      <li><span class="label">Resume:</span> <a href="resume.pdf" target="_blank" rel="noopener">View →</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Logan Policano</footer>
+
+</div>
+</body>
+</html>
